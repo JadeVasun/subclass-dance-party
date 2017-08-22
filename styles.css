@@ -7,34 +7,49 @@ body{
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: white;
   
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
-  text-align:right;
-  display: inline-block;
+  float:left;
+  display: inline;
   margin: 0 10px;
   vertical-align: top;
   text-transform: uppercase;
   text-decoration: none;
+  color: lightblue;
+}
+
+.title{
+  font: 1em sans-serif;
+}
+
+
+.addDancerButton{
+  color: white;
+  float: right
+  
 }
 .topbar{
   height:32px;
   background-color: #555;
 }
-.title{
-  background-color: #555;
-  text-align: center
-}
+
 .dancer{
   
   
-  position:absolute;
+  position: relative;
   
 }
 
 .poop {
   height: 50px;
   width: 50px
+}
+
+#toilet {
+  position: absolute;
+
 }

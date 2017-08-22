@@ -21,12 +21,17 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-
+    // console.log($("body").height());
+    // console.log($("body").width());
     var dancer = new dancerMakerFunction (
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
+    // var blinkingToiletdancer = new blinkingToiletDancer (
+    //   500, 500, 100
+    // );
     $('body').append(dancer.$node);
   });
 });
