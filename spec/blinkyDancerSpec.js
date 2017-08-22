@@ -29,6 +29,15 @@ describe('blinkyDancer', function() {
 
       clock.tick(timeBetweenSteps);
       expect(blinkyDancer.step.callCount).to.be.equal(2);
-    });
+    }); 
   });
+  it('should be an instance of its subclass', function() {
+    expect(blinkyDancer).to.be.an.instanceof(makeBlinkyDancer)
+  });
+  it('should point to dancer in the protoype chain', function() {
+    expect(makeBlinkyDancer.prototype).to.be.an.instanceof(makeDancer);
+  });
+  
 });
+
+
