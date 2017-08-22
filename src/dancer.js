@@ -33,7 +33,7 @@
 
 var makeDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<span class="dancer"><img class="poop"src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_large.png?v=1480481059"/></span>');
   this.step();
   this.setPosition(top,left)
 }
@@ -49,3 +49,5 @@ makeDancer.prototype.setPosition = function (top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+

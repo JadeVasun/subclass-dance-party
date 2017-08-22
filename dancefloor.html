@@ -6,11 +6,44 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/toiletDancer.js"></script>
+    <script src="src/blinkingToiletDancer.js"></script>
+    <style>
+    
+    .toilet {
+    background-color: lightblue;
+    text-align: center;
+    /* display: block; */
+    width: 100%;
+    bottom: 0;
+    }
+
+    body {
+      background-color: lightblue;
+      margin: 0 300px 0 300px;
+    }
+
+    img {
+        width: 230px;
+        height: 200px;
+        /* background-color: lightblue; */
+        bottom: 0;
+        position: absolute;
+    }
+  
+    </style>
   </head>
+
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
-    <script src="src/init.js"></script>
+      <span class="title">POOP PARTY</span>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">ADD POOP</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="blinkingToiletDancer">ADD TOILET</a>
+    </div>
+    <div class=container>  </div>
+    <div class="toilet">
+      <img src="https://www.emojibase.com/resources/img/emojis/apple/x1f6bd.png.pagespeed.ic.-HFYhYABns.png">
+    </div>
+      <script src="src/init.js"></script>
   </body>
 </html>
