@@ -31,7 +31,7 @@
 //   return dancer;
 // };
 
-var makeDancer = function(top, left, timeBetweenSteps) {
+var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.top = top;
   this.left = left;
@@ -41,11 +41,11 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   
 }
 
-makeDancer.prototype.step = function () {
+Dancer.prototype.step = function () {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-makeDancer.prototype.setPosition = function (top, left) {
+Dancer.prototype.setPosition = function (top, left) {
   var styleSettings = {
     top: top,
     left: left

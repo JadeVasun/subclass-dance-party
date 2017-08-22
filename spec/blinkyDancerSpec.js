@@ -5,7 +5,7 @@ describe('blinkyDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    blinkyDancer = new makeBlinkyDancer(10, 20, timeBetweenSteps);
+    blinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
@@ -32,10 +32,10 @@ describe('blinkyDancer', function() {
     }); 
   });
   it('should be an instance of its subclass', function() {
-    expect(blinkyDancer).to.be.an.instanceof(makeBlinkyDancer)
+    expect(blinkyDancer).to.be.an.instanceof(BlinkyDancer)
   });
   it('should point to dancer in the protoype chain', function() {
-    expect(makeBlinkyDancer.prototype).to.be.an.instanceof(makeDancer);
+    expect(BlinkyDancer.prototype).to.be.an.instanceof(Dancer);
   });
   
 });
