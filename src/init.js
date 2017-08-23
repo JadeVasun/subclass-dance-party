@@ -20,6 +20,12 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
+    if (dancerMakerFunctionName === "LineUp") {
+      $('.brown').css({"left": "400px"});
+    } else {
+
+    
+
     // make a dancer with a random position
     // console.log($("body").height());
     // console.log($("body").width());
@@ -28,11 +34,13 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    $('body').append(dancer.$node);
+  }
 
     // var blinkingToiletdancer = new blinkingToiletDancer (
     //   500, 500, 100
     // );
-    $('body').append(dancer.$node);
+   
   });
 });
 
